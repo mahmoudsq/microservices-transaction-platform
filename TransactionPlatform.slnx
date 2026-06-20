@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/src/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/src/building-blocks/">
+    <Project Path="BuildingBlocks/BuildingBlocks.csproj" Id="6c9e392e-1c5e-4271-9a8f-362aceefa9f7" />
+  </Folder>
+  <Folder Name="/src/payments-service/">
+    <Project Path="Payments.API/Payments.API.csproj" />
+    <Project Path="Payments.Application/Payments.Application.csproj" />
+    <Project Path="Payments.Domain/Payments.Domain.csproj" />
+    <Project Path="Payments.Infrastructure/Payments.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/transactions-service/">
+    <Project Path="Transactions.API/Transactions.API.csproj" />
+    <Project Path="Transactions.Application/Transactions.Application.csproj" />
+    <Project Path="Transactions.Domain/Transactions.Domain.csproj" />
+    <Project Path="Transactions.Infrastructure/Transactions.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/transactions-service/">
+    <Project Path="Transactions.Tests/Transactions.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/payments-service/">
+    <Project Path="Payments.Tests/Payments.Tests.csproj" />
+  </Folder>
+</Solution>

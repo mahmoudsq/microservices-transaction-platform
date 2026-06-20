@@ -1,0 +1,27 @@
+{
+  "Transaction.CannotModifyAfterSubmission": "Transaction cannot be modified after submission.",
+  "Transaction.AlreadySubmitted": "Transaction has already been submitted.",
+  "Transaction.CannotSubmitWithoutItems": "Cannot submit a transaction without items.",
+  "Transaction.TotalAmountMustBePositive": "Total amount must be greater than zero.",
+  "Transaction.CannotCancelCompleted": "A completed transaction cannot be cancelled.",
+  "Transaction.AlreadyCancelled": "Transaction is already cancelled.",
+  "Transaction.CannotCancelFailed": "A failed transaction cannot be cancelled.",
+  "Transaction.CannotCompleteFromCurrentState": "Transaction can only be completed from Submitted state.",
+  "Transaction.CannotFailCompleted": "A completed transaction cannot be failed.",
+  "Transaction.CannotFailCancelled": "A cancelled transaction cannot be failed.",
+  "Transaction.AlreadyFailed": "Transaction is already failed.",
+  "Transaction.NotFound": "Transaction not found.",
+
+  "Transaction.Reference.Required": "Reference is required.",
+  "Transaction.Reference.TooLong": "Reference must not exceed 100 characters.",
+  "Transaction.Currency.Required": "Currency is required.",
+  "Transaction.Currency.MustBeThreeCharacters": "Currency must be exactly 3 characters.",
+  "Transaction.IdempotencyKey.Required": "Idempotency key is required.",
+  "Transaction.IdempotencyKey.TooLong": "Idempotency key must not exceed 100 characters.",
+  "Transaction.Id.Required": "Transaction ID is required.",
+
+  "TransactionItem.ProductId.Required": "Product ID is required.",
+  "TransactionItem.ProductId.TooLong": "Product ID must not exceed 100 characters.",
+  "TransactionItem.Quantity.MustBePositive": "Item quantity must be greater than zero.",
+  "TransactionItem.Price.MustBePositive": "Item price must be greater than zero."
+}

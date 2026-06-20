@@ -1,0 +1,103 @@
+services:
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_running"]
+      interval: 10s
+      timeout: 5s
+      retries: 5  
+  
+  transactions-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: transactions-db
+    ports:
+      - 1433:1433
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: YourStrong!Passw0rd
+    volumes:
+      - transactions_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P YourStrong!Passw0rd -Q 'SELECT 1' || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
+
+  payments-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: payment-db
+    ports:
+      - 1434:1433
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: YourStrong!Passw0rd
+    volumes:
+      - payments_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P YourStrong!Passw0rd -Q 'SELECT 1' || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
+  transactions-service:
+    build:
+      context: ./src/transactions-service
+      dockerfile: Transactions.API/Dockerfile
+    container_name: transactions-service
+    ports:
+      - "5001:8080"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      transactions-db:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+
+      ConnectionStrings__DefaultConnection: Server=transactions-db,1433;Database=TransactionsDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;
+
+      RabbitMQ__Host: rabbitmq
+      RabbitMQ__Username: guest
+      RabbitMQ__Password: guest
+
+    restart: unless-stopped
+
+
+  payments-service:
+    build:
+      context: ./src/payments-service
+      dockerfile: Payments.API/Dockerfile
+    container_name: payments-service
+    ports:
+      - 5002:8080
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      payments-db:
+        condition: service_healthy
+    environment:
+        ASPNETCORE_ENVIRONMENT: Development
+
+
+        ConnectionStrings__DefaultConnection: Server=payments-db,1433;Database=PaymentsDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;
+
+        RabbitMQ__Host: rabbitmq
+        RabbitMQ__Username: guest
+        RabbitMQ__Password: guest
+
+    restart: unless-stopped
+
+volumes:
+  transactions_data:
+  payments_data:
+
+  

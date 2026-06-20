@@ -1,0 +1,12 @@
+{
+  "Payment.AlreadyConfirmed": "Payment is already confirmed.",
+  "Payment.CannotConfirmFailed": "A failed payment cannot be confirmed.",
+  "Payment.CannotFailConfirmed": "A confirmed payment cannot be failed.",
+  "Payment.AlreadyFailed": "Payment is already failed.",
+
+  "Payment.TransactionId.Required": "Transaction ID is required.",
+  "Payment.Amount.MustBePositive": "Amount must be greater than zero.",
+  "Payment.Currency.Required": "Currency is required.",
+  "Payment.Currency.MustBeThreeCharacters": "Currency must be exactly 3 characters.",
+  "Payment.CorrelationId.Required": "Correlation ID is required."
+}

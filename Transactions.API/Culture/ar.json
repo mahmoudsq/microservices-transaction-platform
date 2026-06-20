@@ -1,0 +1,27 @@
+{
+  "Transaction.CannotModifyAfterSubmission": "لا يمكن تعديل المعاملة بعد تقديمها.",
+  "Transaction.AlreadySubmitted": "تم تقديم المعاملة بالفعل.",
+  "Transaction.CannotSubmitWithoutItems": "لا يمكن تقديم معاملة بدون عناصر.",
+  "Transaction.TotalAmountMustBePositive": "يجب أن يكون المبلغ الإجمالي أكبر من صفر.",
+  "Transaction.CannotCancelCompleted": "لا يمكن إلغاء معاملة مكتملة.",
+  "Transaction.AlreadyCancelled": "المعاملة ملغاة بالفعل.",
+  "Transaction.CannotCancelFailed": "لا يمكن إلغاء معاملة فاشلة.",
+  "Transaction.CannotCompleteFromCurrentState": "لا يمكن إكمال المعاملة إلا من حالة المقدمة.",
+  "Transaction.CannotFailCompleted": "لا يمكن تحويل معاملة مكتملة إلى حالة الفشل.",
+  "Transaction.CannotFailCancelled": "لا يمكن تحويل معاملة ملغاة إلى حالة الفشل.",
+  "Transaction.AlreadyFailed": "المعاملة فاشلة بالفعل.",
+  "Transaction.NotFound": "المعاملة غير موجودة.",
+
+  "Transaction.Reference.Required": "الرقم المرجعي مطلوب.",
+  "Transaction.Reference.TooLong": "يجب ألا يتجاوز الرقم المرجعي 100 حرف.",
+  "Transaction.Currency.Required": "العملة مطلوبة.",
+  "Transaction.Currency.MustBeThreeCharacters": "يجب أن تتكون العملة من 3 أحرف بالضبط.",
+  "Transaction.IdempotencyKey.Required": "مفتاح الإجراء الفريد مطلوب.",
+  "Transaction.IdempotencyKey.TooLong": "يجب ألا يتجاوز مفتاح الإجراء الفريد 100 حرف.",
+  "Transaction.Id.Required": "معرف المعاملة مطلوب.",
+
+  "TransactionItem.ProductId.Required": "معرف المنتج مطلوب.",
+  "TransactionItem.ProductId.TooLong": "يجب ألا يتجاوز معرف المنتج 100 حرف.",
+  "TransactionItem.Quantity.MustBePositive": "يجب أن تكون كمية العنصر أكبر من صفر.",
+  "TransactionItem.Price.MustBePositive": "يجب أن يكون سعر العنصر أكبر من صفر."
+}

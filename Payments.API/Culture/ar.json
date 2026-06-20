@@ -1,0 +1,12 @@
+{
+  "Payment.AlreadyConfirmed": "الدفعة مؤكدة بالفعل.",
+  "Payment.CannotConfirmFailed": "لا يمكن تأكيد دفعة فاشلة.",
+  "Payment.CannotFailConfirmed": "لا يمكن إفشال دفعة مؤكدة.",
+  "Payment.AlreadyFailed": "الدفعة فاشلة بالفعل.",
+
+  "Payment.TransactionId.Required": "معرف المعاملة مطلوب.",
+  "Payment.Amount.MustBePositive": "يجب أن يكون المبلغ أكبر من صفر.",
+  "Payment.Currency.Required": "العملة مطلوبة.",
+  "Payment.Currency.MustBeThreeCharacters": "يجب أن تتكون العملة من 3 أحرف بالضبط.",
+  "Payment.CorrelationId.Required": "معرف الارتباط مطلوب."
+}
