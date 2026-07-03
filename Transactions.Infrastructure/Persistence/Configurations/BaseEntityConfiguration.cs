@@ -12,6 +12,7 @@ public class BaseEntityConfiguration<T> : IEntityTypeConfiguration<T>
     public virtual void Configure(EntityTypeBuilder<T> builder)
     {
         builder.HasKey("Id");
+        builder.Property("Id").ValueGeneratedNever();
 
         if (typeof(IAudiEntity).IsAssignableFrom(typeof(T)))
         {

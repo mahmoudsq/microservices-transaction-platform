@@ -26,6 +26,9 @@ public sealed class TransactionConfiguration : BaseEntityConfiguration<Transacti
             .HasForeignKey(i => i.TransactionId)
             .OnDelete(DeleteBehavior.Cascade);
 
+        builder.Navigation(x => x.Items)
+            .UsePropertyAccessMode(PropertyAccessMode.Field);
+
         builder.Property(x => x.Currency)
             .HasMaxLength(3);
 

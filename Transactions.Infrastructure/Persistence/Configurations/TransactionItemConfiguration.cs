@@ -10,6 +10,7 @@ public sealed class TransactionItemConfiguration : IEntityTypeConfiguration<Tran
     {
         builder.ToTable("TransactionItems");
         builder.HasKey(x => x.Id);
+        builder.Property(x => x.Id).ValueGeneratedNever();
 
         builder.Property(x => x.ProductId)
             .IsRequired()
