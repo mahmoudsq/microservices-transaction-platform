@@ -2,7 +2,7 @@ using BuildingBlocks.Abstractions;
 using BuildingBlocks.Exceptions;
 using FluentAssertions;
 using NSubstitute;
-using Payments.Application.Abstractions;
+using Payments.Domain.Abstractions;
 using Payments.Application.Commands.FailPayment;
 using Payments.Domain.Entities;
 using Payments.Domain.Enums;

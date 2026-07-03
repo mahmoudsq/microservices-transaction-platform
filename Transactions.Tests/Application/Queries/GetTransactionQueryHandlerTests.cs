@@ -1,7 +1,7 @@
 using BuildingBlocks.Exceptions;
 using FluentAssertions;
 using NSubstitute;
-using Transactions.Application.Abstractions;
+using Transactions.Domain.Abstractions;
 using Transactions.Application.Queries.GetTransaction;
 using Transactions.Domain.Entities;
 

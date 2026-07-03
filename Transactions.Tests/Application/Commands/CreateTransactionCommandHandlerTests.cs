@@ -1,7 +1,7 @@
 using BuildingBlocks.Abstractions;
 using FluentAssertions;
 using NSubstitute;
-using Transactions.Application.Abstractions;
+using Transactions.Domain.Abstractions;
 using Transactions.Application.Commands.CreateTransaction;
 using Transactions.Domain.Entities;
 

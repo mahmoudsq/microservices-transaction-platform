@@ -1,6 +1,6 @@
 using BuildingBlocks.Abstractions;
 using MediatR;
-using Payments.Application.Abstractions;
+using Payments.Domain.Abstractions;
 
 namespace Payments.Application.Commands.FailPayment;
 

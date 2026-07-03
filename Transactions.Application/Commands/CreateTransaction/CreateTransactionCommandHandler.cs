@@ -1,6 +1,6 @@
 using BuildingBlocks.Abstractions;
 using MediatR;
-using Transactions.Application.Abstractions;
+using Transactions.Domain.Abstractions;
 using Transactions.Application.DTOs;
 using Transactions.Domain.Entities;
 

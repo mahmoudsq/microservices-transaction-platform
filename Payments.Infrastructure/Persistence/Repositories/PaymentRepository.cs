@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Payments.Application.Abstractions;
+using Payments.Domain.Abstractions;
 using Payments.Domain.Entities;
 
 namespace Payments.Infrastructure.Persistence.Repositories;

@@ -1,6 +1,6 @@
 using Transactions.Domain.Entities;
 
-namespace Transactions.Application.Abstractions;
+namespace Transactions.Domain.Abstractions;
 
 public interface ITransactionRepository
 {

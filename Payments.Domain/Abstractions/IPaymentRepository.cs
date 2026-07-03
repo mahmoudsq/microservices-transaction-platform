@@ -1,6 +1,6 @@
 using Payments.Domain.Entities;
 
-namespace Payments.Application.Abstractions;
+namespace Payments.Domain.Abstractions;
 
 public interface IPaymentRepository
 {

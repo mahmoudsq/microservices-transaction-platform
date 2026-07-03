@@ -1,6 +1,6 @@
 using FluentAssertions;
 using NSubstitute;
-using Payments.Application.Abstractions;
+using Payments.Domain.Abstractions;
 using Payments.Application.Queries.GetPayment;
 using Payments.Domain.Entities;
 
