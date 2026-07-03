@@ -1,5 +1,5 @@
 using MediatR;
-using Transactions.Application.Abstractions;
+using Transactions.Domain.Abstractions;
 using Transactions.Application.DTOs;
 
 namespace Transactions.Application.Queries.GetAllTransactions;

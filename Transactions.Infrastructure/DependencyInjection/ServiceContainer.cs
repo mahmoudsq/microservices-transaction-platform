@@ -2,7 +2,7 @@ using BuildingBlocks.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Transactions.Application.Abstractions;
+using Transactions.Domain.Abstractions;
 using Transactions.Infrastructure.BackgroundServices;
 using Transactions.Infrastructure.Persistence;
 using Transactions.Infrastructure.Persistence.Interceptors;

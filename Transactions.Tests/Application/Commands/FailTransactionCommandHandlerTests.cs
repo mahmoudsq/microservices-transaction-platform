@@ -2,7 +2,7 @@ using BuildingBlocks.Abstractions;
 using BuildingBlocks.Exceptions;
 using FluentAssertions;
 using NSubstitute;
-using Transactions.Application.Abstractions;
+using Transactions.Domain.Abstractions;
 using Transactions.Application.Commands.FailTransaction;
 using Transactions.Domain.Entities;
 using Transactions.Domain.Enums;

@@ -1,6 +1,6 @@
 using BuildingBlocks.Abstractions;
 using MediatR;
-using Payments.Application.Abstractions;
+using Payments.Domain.Abstractions;
 using Payments.Application.DTOs;
 using Payments.Domain.Entities;
 

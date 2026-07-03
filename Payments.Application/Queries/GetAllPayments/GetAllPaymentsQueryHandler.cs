@@ -1,5 +1,5 @@
 using MediatR;
-using Payments.Application.Abstractions;
+using Payments.Domain.Abstractions;
 using Payments.Application.DTOs;
 
 namespace Payments.Application.Queries.GetAllPayments;

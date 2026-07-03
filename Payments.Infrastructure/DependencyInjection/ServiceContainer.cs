@@ -2,7 +2,7 @@ using BuildingBlocks.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Payments.Application.Abstractions;
+using Payments.Domain.Abstractions;
 using Payments.Infrastructure.BackgroundServices;
 using Payments.Infrastructure.Persistence;
 using Payments.Infrastructure.Persistence.Interceptors;

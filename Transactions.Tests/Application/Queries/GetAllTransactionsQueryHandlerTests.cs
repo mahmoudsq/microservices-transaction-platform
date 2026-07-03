@@ -1,6 +1,6 @@
 using FluentAssertions;
 using NSubstitute;
-using Transactions.Application.Abstractions;
+using Transactions.Domain.Abstractions;
 using Transactions.Application.Queries.GetAllTransactions;
 using Transactions.Domain.Entities;
 

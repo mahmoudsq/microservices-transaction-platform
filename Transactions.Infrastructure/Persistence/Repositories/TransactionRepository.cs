@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Transactions.Application.Abstractions;
+using Transactions.Domain.Abstractions;
 using Transactions.Domain.Entities;
 
 namespace Transactions.Infrastructure.Persistence.Repositories;
