@@ -32,5 +32,5 @@ jobs:
 
 
       - name: Restore Packages
-        uses: dotnet restore
+        run: dotnet restore
       
